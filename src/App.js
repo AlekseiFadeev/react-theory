@@ -19,7 +19,7 @@ class App extends Component{
             }
         ],
         pageTitle: 'React components',
-        showCars: false
+        showCars: true
     }
 
     toggleCarsHandler = () => {
