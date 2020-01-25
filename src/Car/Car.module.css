@@ -18,7 +18,7 @@
 }
 
 .input:active, .input:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .input.green {
