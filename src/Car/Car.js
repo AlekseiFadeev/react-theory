@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import classes from './Car.module.css'
+import PropTypes from 'prop-types'
 import withClass from "../Hoc/withClass"
 
 class Car extends Component{
@@ -31,6 +32,13 @@ class Car extends Component{
             </>
         )
     }
+}
+
+Car.propTypes = {
+    name: PropTypes.string.isRequired,
+    year: PropTypes.number,
+    onChangeName: PropTypes.func,
+    onDelete: PropTypes.func
 }
 
 export default withClass(Car, classes.Car)
